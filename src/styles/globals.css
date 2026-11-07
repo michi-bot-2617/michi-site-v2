@@ -558,3 +558,36 @@ main {
     padding: 20px 20px 18px;
   }
 }
+
+/* Editorial redesign: a quiet reading column and a small typographic portrait. */
+:root { --bg-primary: #171717; --bg-secondary: #1b1b1b; --bg-tertiary: #222; --border-subtle: #303030; --text-primary: #f2f2f0; --text-secondary: #b3b3b1; --text-tertiary: #929290; }
+.site-header { position: static; background: none; border: 0; backdrop-filter: none; }
+.site-header nav { max-width: none; padding: 20px 30px; }
+.nav-home { display: inline-flex; align-items: center; min-height: 44px; font-size: 19px; font-weight: 500; }
+.brand-mark { color: var(--accent); font-size: 21px; margin-right: 6px; }
+.nav-links { gap: 25px; }
+.nav-links a { font-size: 13px; }
+main { max-width: 590px; padding: 35px 24px 90px; }
+.signal { color: #858583; overflow: hidden; text-align: center; font-family: var(--font-mono), monospace; }
+.signal-line { font-size: 8px; letter-spacing: .19em; white-space: nowrap; overflow: hidden; }
+.signal pre { font: 9px/1.4 var(--font-mono), monospace; margin: 7px 0; }
+.intro { margin: 68px 0 76px; }
+.intro h1 { margin: 0 0 22px; font-size: clamp(39px, 5vw, 48px); letter-spacing: -.045em; line-height: 1.06; font-weight: 500; }
+.intro p, .home-section p { margin: 0; max-width: 48ch; font-size: 16px; line-height: 1.55; }
+.home-section { border-top: 1px solid var(--border-subtle); padding: 22px 0 52px; }
+.eyebrow { display: block; color: var(--text-tertiary); font: 10px/1.4 var(--font-mono), monospace; letter-spacing: .04em; margin-bottom: 14px; }
+.home-section h2 { font-size: 18px; line-height: 1.35; font-weight: 500; letter-spacing: -.015em; margin: 0 0 10px; }
+.home-section p { color: var(--text-secondary); }
+.writing-row { display: flex; justify-content: space-between; gap: 20px; color: var(--text-primary); text-decoration: none; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 19px 0; margin-top: 22px; }
+.writing-row strong, .writing-row small { display: block; }
+.writing-row strong { font-weight: 500; font-size: 16px; }
+.writing-row small { margin-top: 4px; font-size: 14px; color: var(--text-secondary); }
+.row-arrow { transition: transform 150ms ease; }
+.writing-row:hover .row-arrow { transform: translate(3px,-3px); }
+.text-link { display: inline-block; color: var(--text-primary); padding: 18px 0 6px; font-size: 14px; text-decoration-color: #777; text-underline-offset: 4px; }
+.playground .blob-stage { margin-top: 24px; border-radius: 2px; }
+.site-footer { border-top: 1px solid var(--border-subtle); padding-top: 24px; display: flex; justify-content: space-between; gap: 20px; color: var(--text-tertiary); font-size: 13px; }
+.site-footer div { display: flex; gap: 20px; }
+.site-footer a { color: var(--text-secondary); text-decoration: none; }
+.site-footer a:hover, .text-link:hover { color: var(--text-primary); text-decoration: underline; }
+@media (max-width: 600px) { .site-header nav { padding: 12px 20px; } .nav-links { gap: 16px; } .nav-links a { font-size: 12px; } main { padding: 28px 20px 70px; } .intro { margin: 54px 0 60px; } .intro h1 { font-size: clamp(36px, 10vw, 45px); } .site-footer { flex-wrap: wrap; } }

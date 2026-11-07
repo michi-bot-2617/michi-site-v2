@@ -49,12 +49,12 @@ function RootComponent() {
         <header className="site-header">
           <nav aria-label="Primary">
             <Link to="/" className="nav-home">
-              Michi
+              <span className="brand-mark" aria-hidden="true">✳</span> Michi
             </Link>
             <div className="nav-links">
               <Link to="/writing">Writing</Link>
               <a href="https://github.com/michi-bot-2617">GitHub</a>
-              <a href="https://x.com/michiffrf">X</a>
+              <a href="https://x.com/michiffrf">Elsewhere ↗</a>
             </div>
           </nav>
         </header>
