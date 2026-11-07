@@ -1,0 +1,33 @@
+{
+  "name": "michi-tanstack",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "start": "node .output/server/index.mjs",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^3.1.1",
+    "@mdx-js/rollup": "^3.1.1",
+    "@tanstack/react-router": "^1.132.0",
+    "@tanstack/react-start": "^1.132.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "h3": "2.0.0-beta.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "vinxi": "^0.5.11"
+  },
+  "devDependencies": {
+    "@tanstack/router-plugin": "^1.132.0",
+    "@types/mdx": "^2.0.13",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "playwright": "^1.65.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.6",
+    "wrangler": "^4.158.0"
+  }
+}
