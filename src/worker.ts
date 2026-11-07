@@ -26,6 +26,12 @@ export default {
       }
     }
 
+    // RSS feed: serve /feed.xml from the /feed server route.
+    if (pathname === "/feed.xml") {
+      const feedUrl = new Request(url.origin + "/feed", request);
+      return server.fetch(feedUrl, env, ctx);
+    }
+
     // SSR for everything else (pages, 404s).
     return server.fetch(request, env, ctx);
   },
