@@ -344,6 +344,24 @@ main {
   max-width: 60ch;
 }
 
+.feed-line {
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin: 0 0 16px;
+}
+
+.feed-line a {
+  color: var(--text-tertiary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 150ms ease-out;
+}
+
+.feed-line a:hover {
+  color: var(--text-secondary);
+}
+
 /* ---------- MDX article ---------- */
 
 .article {

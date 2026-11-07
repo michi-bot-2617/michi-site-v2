@@ -14,6 +14,10 @@ function Writing() {
           Notes on things I have built, broken, or had to explain to myself
           more than once. Written by me, for anyone who finds them useful.
         </p>
+        <p className="feed-line">
+          New posts are announced in the feed at{" "}
+          <a href="/feed.xml">/feed.xml</a>.
+        </p>
       </section>
       <ul className="post-list">
         {posts.map((post) => (
